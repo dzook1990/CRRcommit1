@@ -1,0 +1,134 @@
+body{
+	padding-top: 60px;
+	padding-bottom: 40px;
+	background-color: deepskyblue;
+	background-image: url(https://th.bing.com/th/id/R.3147782ad0534b12cdf8cd77e27a3365?rik=F00RNer1GSQfvA&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f04%2fLive-fish-backgrounds-wallpapers-HD.jpg&ehk=ytEASTQkDB4PuLF9Yvb0U1D3gPmbKrWfqCerKjBO6Cg%3d&risl=&pid=ImgRaw&r=0);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+header{
+	background-color: #262626;
+}
+li{
+	list-style: none;
+}
+a{
+	color: white;
+	text-decoration: none;
+}
+.navbar{
+	min-height: 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 24px;
+}
+.nav-menu{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 60px;	
+}
+.nav-branding{
+	font-size: 2rem;
+}
+.nav-link{
+	transition: 0.7s ease;
+}
+.nav-link:hover{
+	color: dodgerblue;
+}
+.hamburger{
+	display: none;
+	cursor: pointer;
+}
+.bar{
+	display: block;
+	width: 25px;
+	height: 3px;
+	margin: 5px auto;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background-color: white;
+}
+@media(max-width:768px){
+	.hamburger{
+		display: block;
+	}
+	.hamburger.active .bar:nth-child(2){
+		opacity: 0;
+	}
+	.hamburger.active .bar:nth-child(1){
+		transform: translateY(11px); rotate: 45deg;
+	}
+	.hamburger.active .bar:nth-child(3){
+		transform: translateY(-11px); rotate:-45deg;
+	}
+	.nav-menu{
+		position: fixed;
+		left: -100%;
+		top: 70px;
+		gap: 0;
+		flex-direction: column;
+		background-color: #262626;
+		width: 100%;
+		text-align: center;
+		transition: 0.3s;
+	}
+	nav-item{
+		margin: 16px 0;
+	}
+	.nav-menu.active{
+		left: 0;
+	}
+}
+
+.container{
+	width: 100%;
+	padding-top: 10px;
+	margin: 0 auto;
+	background-color: steelblue;
+	border-radius: 10px;
+	opacity: 1;
+}
+p,h1{
+	color: black;
+	padding: 10;
+	font-size: 30px;
+	text-align: center;
+}
+h1{
+	font-weight: bold;
+	font-size: 40px;
+	color: black;
+}
+p{
+	background-color: steelblue;
+	border-radius: 10px;
+	opacity: 1;
+}
+img{
+	width: 100px;
+	float: left;
+	padding-left: 10px;
+}
+
+@media screen and (max-width: 450px) {
+	.overlay a {font-size: 20px;}
+	.overlay .closebtn {
+		font-size: 40px;
+		top: 15px;
+		right: 35px;
+	}
+}
+
+
+
+
